@@ -52,6 +52,7 @@ int main(int argc, const char *argv[])
             {
                 others.push_back(points[j]);
             }
+        }
             std::sort(others.begin(), others.end(), PolarSorter{p});
             for (size_t h = 0; h < others.size(); ++h)
             {
@@ -74,7 +75,7 @@ int main(int argc, const char *argv[])
                     window->draw_line(line.front(), line.back());
                 }
             }
-        }
+        
     };
 
     /////////////////////////////////////////////////////////////////////////////
